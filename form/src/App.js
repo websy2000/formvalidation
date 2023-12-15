@@ -5,9 +5,9 @@ import * as Yup from 'yup';
 function App() {
 
   const yupSchema = Yup.object().shape({
-    name: Yup.string().min(2, 'To short').max(20, 'To long').required('Required'),
-    email: Yup.string().email('Invalid email').required('Required'),
-    password: Yup.string().min(5, 'To short').max(20, 'To long').required('Required')
+    name: Yup.string().min(2, 'To short').max(20, 'To long').required('Enter name'),
+    email: Yup.string().email('Invalid email').required('Enter Email'),
+    password: Yup.string().min(5, 'To short').max(20, 'To long').required('Enter Password')
   });
 
 
